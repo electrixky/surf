@@ -24,7 +24,7 @@ li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, p, blockquote {
+h1, h2, h3, h4, h5, p, blockquote, dd, dt {
   margin: 0;
 }
 
@@ -411,4 +411,61 @@ body {
 .blockquote__time {
   display: block;
   text-align: right;
+}
+
+.footer {
+  padding: 100px 0;
+  background-color: #2B2A29;
+  color: #fff;
+}
+
+.footer__inner {
+  max-width: 1160px;
+  padding: 0 1px;
+  margin: 0 auto;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer__title {
+  font-size: 64px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer__info-list {
+  display: flex;
+  gap: 68px;
+  margin-bottom: 60px;
+}
+
+.footer__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__info-item dt {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer__info-item span {
+  display: block;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: flex-end;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 40px;
 }
