@@ -126,7 +126,7 @@ body {
   margin-top: auto;
 }
 
-.header__social-list {
+.social-list {
   display: flex;
   gap: 20px;
 }
