@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-  max-width: 1740px;
+  max-width: 1240px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -46,15 +46,17 @@ body {
 .header {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
-  /*background-position: 50% 20%;  3:42*/
-  background-position: top center;
+  background-position: 50% 20%;
+  /*background-position: top center;*/
   background-size: cover;
-  min-height: 100vh;
-  padding-bottom: 80px;
+  /*min-height: 100vh;*/
+  /*overflow: hidden;*/
+  padding-bottom: 50px;
+  max-height: 100vh;
 }
 
 .header__top {
-  padding: 50px -0px 90px;
+  padding: 50px 0 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +105,7 @@ body {
 .header__info {
   display: flex;
   flex-direction: column;
-  gap: 118px;
+  /*gap: 118px;*/
 }
 
 .header__info-list {
@@ -111,7 +113,7 @@ body {
   gap: 18px 10px;
   flex-wrap: wrap;
   max-width: 495px;
-  margin-top: 220px;
+  margin-top: 120px;
 }
 
 .header__info-item {
@@ -119,7 +121,7 @@ body {
   color: #0A507A;
   border-radius: 30px;
   border: 1px solid #0A507A;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -133,21 +135,21 @@ body {
 }
 
 .header__news {
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 .header__news-box {
   display: flex;
   flex-direction: column;
-  padding: 50px 20px;
+  padding: 20px 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .header__news-title,
 .header__news-time {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -160,17 +162,18 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: underline;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   align-self: flex-start;
 }
 
 .header__buttons {
   display: flex;
+  justify-content: space-around;
   gap: 20px;
+  font-size: 24px;
 }
 
 .header__buttons-activities {
-  font-size: 32px;
   font-weight: 800;
   padding: 10px 20px;
   border-radius: 30px;
@@ -178,7 +181,6 @@ body {
 }
 
 .buttons-book {
-  font-size: 32px;
   font-weight: 800;
   padding: 10px 20px;
   border-radius: 30px;
@@ -572,7 +574,7 @@ body {
   }
 
   .header__info-list {
-    max-width: 100%;
+    /*max-width: 100%;*/
   }
 
   .header__info {
