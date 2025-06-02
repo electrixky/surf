@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -52,11 +53,11 @@ body {
   /*min-height: 100vh;*/
   /*overflow: hidden;*/
   padding-bottom: 50px;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .header__top {
-  padding: 50px 0 90px;
+  padding: 50px 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,7 +114,7 @@ body {
   gap: 18px 10px;
   flex-wrap: wrap;
   max-width: 495px;
-  margin-top: 120px;
+  margin-top: 170px;
 }
 
 .header__info-item {
@@ -135,13 +136,13 @@ body {
 }
 
 .header__news {
-  margin-top: -40px;
+  margin-top: -20px;
 }
 
 .header__news-box {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
+  padding: 20px 20px 40px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 40px;
