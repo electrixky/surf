@@ -134,7 +134,7 @@ body {
   color: #0A507A;
   border-radius: 30px;
   border: 1px solid #0A507A;
-  font-size: clamp(16px, calc(0.382vw + 14.66px), 22px);
+  font-size: clamp(14px, calc(0.51vw + 12.21px), 22px);
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -905,4 +905,52 @@ body {
   .reviews__items {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 450px) {
+  .header__content {
+    align-items: center;
+    gap: 150px;
+  }
+
+  .header__news {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .header__info {
+    order: -1;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .header__news-box {
+    max-width: 100%;
+  }
+
+  .header__info-list {
+    margin-top: -40px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .header__social-list {
+    margin-top: -100px;
+    justify-content: flex-end;
+  }
+
+  .social-item img {
+    max-width: 40px;
+  }
+
+  .header__buttons {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+
 }
