@@ -293,9 +293,9 @@ body {
 
 .about__link {
   position: absolute;
-  right: 68px;
-  bottom: 46px;
-  font-size: 32px;
+  right: clamp(20px, calc(3.057vw + 9.26px), 68px);;
+  bottom: clamp(20px, calc(1.654vw + 14.4px), 46px);
+  font-size: clamp(20px, calc(0.764vw + 15.33px), 32px);
   font-weight: 800;
   border: 1px solid #fff;
   color: #fff;
@@ -360,7 +360,7 @@ body {
 }
 
 .activities__item h5 {
-  font-size: 26px;
+  font-size: clamp(18px, calc(0.51vw + 16.21px), 26px);
   font-weight: 700;
   max-width: 115px;
   text-align: center;
@@ -667,9 +667,24 @@ body {
   }
 }
 
+@media (max-width: 1150px) {
+  .about__img {
+    flex-basis: 70%;
+  }
+}
+
 @media (max-width: 1100px) {
   .header {
     background-position: 30% 250%;
+  }
+  .about__img {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .about__img {
+    margin-top: 100px;
   }
 }
 
@@ -856,7 +871,7 @@ body {
   }
 
   .header__buttons-activities,
-  .buttons-book {
+  .header__buttons-book {
     width: 100%;
     text-align: center;
   }
