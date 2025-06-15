@@ -52,7 +52,6 @@ body {
   background-size: cover;
   /*overflow: hidden;*/
   padding-bottom: 50px;
-  min-height: 100vh;
 }
 
 .header-bg {
@@ -118,11 +117,13 @@ body {
 }
 
 .header__info {
+  display: flex;
   flex-direction: column;
 }
 
 .header__info-list {
   display: flex;
+  align-content: flex-start;
   gap: 18px 10px;
   flex-wrap: wrap;
   max-width: 495px;
@@ -556,6 +557,12 @@ body {
 @media (max-width: 1710px) {
   .header__info-list {
     margin-top: 165px;
+  }
+}
+
+@media (min-width: 1630px) and (max-width: 1730px) {
+  .header {
+    padding-bottom: 60px;
   }
 }
 
