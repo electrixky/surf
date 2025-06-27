@@ -163,7 +163,7 @@ body {
 .header__news-box {
   display: flex;
   flex-direction: column;
-  padding: clamp(20px, calc(1.911vw + 13.3px), 50px) 20px clamp(30px, calc(1.274vw + 25.54px), 50px);;
+  padding: clamp(20px, calc(1.67vw + 14.6px), 40px) 20px clamp(30px, calc(1.274vw + 25.54px), 50px);;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 100px;
@@ -424,10 +424,9 @@ body {
 }
 
 .footer {
-  padding: 100px 0;
+  padding: clamp(35px, calc(4.06vw + 21.5px), 100px) 0;
   background-color: #2B2A29;
   color: #fff;
-  max-height: 560px;
 }
 
 .footer__inner {
@@ -440,26 +439,32 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  margin-bottom: 50px;
+  margin-bottom: clamp(20px, calc(1.88vw + 9.5px), 50px);;
 }
 
 .footer__title {
-  margin-bottom: 30px;
+  margin-bottom: clamp(20px, calc(0.63vw + 13px), 30px);
 }
 
 .footer__info-list {
   display: flex;
   gap: 68px;
+  justify-content: center;
 }
 
 .footer__info-item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: clamp(8px, calc(0.75vw + 3.4px), 20px);
 }
 
 .footer__info-item dt {
-  font-size: 20px;
+  font-size: clamp(16px, calc(0.83vw + 9.36px), 20px);
+  font-weight: 700;
+}
+
+.footer__info-item dd {
+  font-size: clamp(12px, calc(0.83vw + 5.3px), 16px);
   font-weight: 700;
 }
 
@@ -470,13 +475,18 @@ body {
 .footer__bottom {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: clamp(20px, calc(1.88vw + 9.5px), 50px);
   align-items: flex-end;
 }
 
 .footer__nav {
   display: flex;
   gap: 40px;
+  text-align: center;
+}
+
+.footer__nav-link {
+  font-size: clamp(12px, calc(0.83vw + 5.3px), 16px);
 }
 
 .menu__btn {
@@ -626,10 +636,6 @@ body {
   .activities__text .buttons-book {
     font-size: 22px;
     margin-top: 10px;
-  }
-
-  .footer {
-    padding: 70px 0;
   }
 }
 
@@ -953,10 +959,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .footer {
-    padding: 75px 0;
-  }
-
   .footer__bottom {
     flex-wrap: wrap;
   }
@@ -1013,6 +1015,11 @@ body {
   .footer__info-list {
     flex-wrap: wrap;
     gap: 30px;
+    text-align: center;
+  }
+
+  .footer__bottom {
+    justify-content: center;
   }
 }
 
