@@ -171,7 +171,7 @@ body {
 
 .header__news-title,
 .header__news-time {
-  font-size: clamp(20px, calc(0.764vw + 17.3px), 32px);
+  font-size: calc(25px + 7 * ((100vw - 1440px) / 480));
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -680,7 +680,11 @@ body {
   }
 
   .header__news-box {
-    max-width: 370px;
+    max-width: 350px;
+  }
+
+  .header__news-title, .header__news-time {
+    font-size: clamp(20px, calc(1.56vw + 14.5px), 25px);
   }
 
   .header__info-list {
@@ -724,10 +728,6 @@ body {
 
   .header__news-box {
     margin-top: 0px;
-  }
-
-  .header__news-title, .header__news-time {
-    font-size: 25px;
   }
 
   .header__buttons {
@@ -818,10 +818,6 @@ body {
 
   .header__news-img {
     max-width: 250px;
-  }
-
-  .header__news-title, .header__news-time {
-    font-size: 22px;
   }
 
   .social-item img {
